@@ -2,6 +2,14 @@
 
 A production-ready, full-stack **MERN** application for booking doctor appointments online with role-based dashboards for **Patients**, **Doctors**, and **Admins**.
 
+## 🚀 Live Demo
+
+🌐 **Frontend (Vercel)**  
+👉 https://appointment-booking-system-two-pi.vercel.app/
+
+⚙️ **Backend (Render API)**  
+👉 https://appointment-booking-system-6swr.onrender.com
+
 ---
 
 ## ⚡ Tech Stack
