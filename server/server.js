@@ -13,9 +13,21 @@ connectDB();
 const app = express();
 
 // Middleware
+const allowedOrigins = [
+  'http://localhost:5173',
+  'https://appointment-booking-system-two-pi.vercel.app',
+  'https://appointment-booking-system-kg0904s-projects.vercel.app'
+];
+
 app.use(cors({
-    origin: process.env.CLIENT_URL || 'http://localhost:5173',
-    credentials: true,
+  origin: function (origin, callback) {
+    if (!origin || allowedOrigins.includes(origin)) {
+      callback(null, true);
+    } else {
+      callback(new Error('Not allowed by CORS'));
+    }
+  },
+  credentials: true
 }));
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
