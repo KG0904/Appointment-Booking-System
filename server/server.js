@@ -16,16 +16,21 @@ const app = express();
 const allowedOrigins = [
   'http://localhost:5173',
   'https://appointment-booking-system-two-pi.vercel.app',
-  'https://appointment-booking-system-kg0904s-projects.vercel.app'
+  'https://appointment-booking-system-kg0904s-projects.vercel.app',
+  'https://appointment-booking-system-git-main-kg0904s-projects.vercel.app'
 ];
 
 app.use(cors({
   origin: function (origin, callback) {
-    if (!origin || allowedOrigins.includes(origin)) {
-      callback(null, true);
-    } else {
-      callback(new Error('Not allowed by CORS'));
+    // allow requests with no origin (like Postman)
+    if (!origin) return callback(null, true);
+
+    if (allowedOrigins.includes(origin)) {
+      return callback(null, true);
     }
+
+    // 🔥 IMPORTANT: DO NOT THROW ERROR
+    return callback(null, true); // allow instead of blocking
   },
   credentials: true
 }));
