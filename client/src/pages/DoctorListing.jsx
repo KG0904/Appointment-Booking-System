@@ -134,7 +134,7 @@ const DoctorListing = () => {
                                                 <span>{doctor.experience} yrs exp</span>
                                             </div>
                                             <div className="flex items-center gap-1 text-sm font-semibold text-accent-700 bg-accent-50 px-3 py-1 rounded-lg">
-                                                <FiDollarSign />
+                                                
                                                 <span>₹{doctor.consultationFee}</span>
                                             </div>
                                         </div>
