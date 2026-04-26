@@ -1,12 +1,13 @@
 import axios from 'axios';
 
+console.log("API URL:", import.meta.env.VITE_API_URL); // 👈 ADD THIS
+
 const API = axios.create({
     baseURL: import.meta.env.VITE_API_URL + '/api',
     headers: {
         'Content-Type': 'application/json',
     },
 });
-
 // Attach JWT token to every request
 API.interceptors.request.use((config) => {
     const token = localStorage.getItem('token');
