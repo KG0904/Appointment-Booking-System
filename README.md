@@ -12,6 +12,17 @@ A production-ready, full-stack **MERN** application for booking doctor appointme
 
 ---
 
+<img width="1917" height="829" alt="image" src="https://github.com/user-attachments/assets/af5bb054-5a06-4607-bc2a-3dd0ec237177" />
+<img width="1911" height="825" alt="image" src="https://github.com/user-attachments/assets/fdb5083e-009d-4565-b53c-a4138923fc2c" />
+<img width="1919" height="830" alt="image" src="https://github.com/user-attachments/assets/5290537e-ff5d-40bd-9985-551741067b66" />
+<img width="1919" height="832" alt="image" src="https://github.com/user-attachments/assets/f4fa4a62-a552-49c0-b39a-406ce59273c0" />
+<img width="1891" height="800" alt="image" src="https://github.com/user-attachments/assets/25d87e25-4af1-4ef7-b10f-847e0be48235" />
+
+
+
+
+
+
 ## ⚡ Tech Stack
 
 | Layer          | Technology                                  |
